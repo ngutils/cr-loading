@@ -1,5 +1,5 @@
 {
-    "name": "",
+    "name": "{{repoName}}",
     "devDependencies": {
         "karma": "0.12.*",
         "karma-cli": "*",
