@@ -1,5 +1,5 @@
 {
-    "name": "{{repoName}}",
+    "name": "cr-loading",
     "devDependencies": {
         "karma": "0.12.*",
         "karma-cli": "*",
