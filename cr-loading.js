@@ -15,7 +15,7 @@ angular.module('cr.loading', [
     return self.clickSpinnerClass;
   }
 
-  self.setClickSpinnerClass = function(s)
+  this.setClickSpinnerClass = function(s)
   {
     self.clickSpinnerClass = s;
   }
@@ -23,6 +23,8 @@ angular.module('cr.loading', [
   this.$get = [function(){
     return self;
   }];
+
+  return this;
 }])
 .directive('crLoading', ['$timeout', "crLoading", function($timeout, crLoading) {
   return {
