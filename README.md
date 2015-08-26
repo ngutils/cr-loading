@@ -11,7 +11,7 @@ This directive is written on [angular-loading-bar](https://github.com/chieffancy
 
 ## Install
 ```
-bower require cr-loading 
+bower install cr-loading 
 ```
 
 ```javascript
