@@ -1,18 +1,19 @@
 # crLoading
 [![Build Status](https://travis-ci.org/ngutils/cr-loading.svg)](https://travis-ci.org/ngutils/cr-loading)  
 
-```html
-<button class="btn" cr-loading>Login</button>
-```
+## Overview
+
+crLoading works with [angular-loading-bar](https://github.com/chieffancypants/angular-loading-bar) that show spinnsers and loading bar when during $http calls. When a form/button starts a $http call, crLoading disables the form/button showing a spinner inside. Oh yeah!
 
 ![](http://s11.postimg.org/8ypjcppz7/crloading_2_1.gif)
 
-This directive is written on [angular-loading-bar](https://github.com/chieffancypants/angular-loading-bar) and use it to manage interpolation with `$http`.
 
 ## Install
+
 ```
-bower install cr-loading 
+bower install cr-loading
 ```
+then inject it:
 
 ```javascript
 angular.module("myApp", [
@@ -20,8 +21,28 @@ angular.module("myApp", [
 ])
 ```
 
+## Usage
+
+You can add it to a button:
+
+```html
+<button class="btn" cr-loading>Login</button>
+```
+
+or a form (that must contain a `submit` button):
+
+```html
+<form cr-loading ng-submit="send()">
+  <!-- inputs... -->
+ <button type='submit'>Send</button>
+</form>
+```
+
+If you're using Font Awesome crLoading will show a spinner inside the button.
+
 ## Configuration
-You can change classes to append into the icon element from `crLoadingProvider`.
+
+You can change the css class appended to the button with the `crLoadingProvider`.
 
 ```javascript
 angular.module("myApp", [
