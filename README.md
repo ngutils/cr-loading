@@ -13,6 +13,14 @@ crLoading works with [angular-loading-bar](https://github.com/chieffancypants/an
 ```
 bower install cr-loading
 ```
+add to your html:
+
+```html
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="bower_components/cr-loading/cr-loading.js"></script>
+<link href="bower_components/angular-loading-bar/build/loading-bar.css" rel="stylesheet"></link>
+```
 then inject it:
 
 ```javascript
