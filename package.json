@@ -1,6 +1,6 @@
 {
     "name": "cr-loading",
-    "version": "0.4.1",
+    "version": "0.5.0",
     "devDependencies": {
         "karma": "0.12.*",
         "karma-cli": "*",
